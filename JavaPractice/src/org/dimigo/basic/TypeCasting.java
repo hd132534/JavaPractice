@@ -12,12 +12,13 @@ public class TypeCasting {
 		long m = 1700000;
 		int e = 3;
 		int s = 1500;
-		String.format("%,d", 10000);
+		
 		System.out.println("<< 디미베네 연간 인건비 >>");
-		System.out.println("월 평균 급여 : " + m + "원");
-		System.out.println("점포 내 직원 수 : " + e + "명");
-		System.out.println("점포 수 : " + s + "개");
-		System.out.println("연간 : ");
+		System.out.printf("월 평균 급여 : %,d원\n", m);
+		System.out.printf("점포 내 직원 수 : %,d명\n", e);
+		System.out.printf("점포 수 : %,d개\n" , s);
+		System.out.printf("\n\n");
+		System.out.printf("연간 인건비 : %,d", m * 12 * e * s);
 	}
 
 }
