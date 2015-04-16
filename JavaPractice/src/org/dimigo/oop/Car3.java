@@ -12,25 +12,33 @@ package org.dimigo.oop;
  * @author				: 	최소희
  * @version			:	1.0
  */
-public class Car2 {
+public class Car3 {
 	private String company;
 	private String model;
 	private String color;
 	private int maxspeed;
 	private int price;
 	
-	public Car2() {
+	public Car3() {
 	
 	}
 	
-	public Car2(String newCompany, String newModel, String newColor, int newMaxSpeed, int newPrice) {
-		company = newCompany;
-		model = newModel;
-		color = newColor;
-		maxspeed = newMaxSpeed;
-		price = newPrice;
+	public Car3(String company, String model, String color, int maxspeed, int price) {
+		this.company = company;
+		this.model = model;
+		this.color = color;
+		this.maxspeed = maxspeed;
+		this.price = price;
 	}
-
+	
+	public Car3(String company, String model, String color, int maxspeed) {
+		this(company, model, color, maxspeed, 0);
+	}
+	
+	public Car3(String company, String model, String color) {
+		this(company, model, color, 0);
+	}
+	
 	public String getCompany() {
 		return company;
 	}
